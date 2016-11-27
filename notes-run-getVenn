@@ -1,0 +1,26 @@
+getIDS <- function (dt,ep) {
+   if (has.dim(dt))  ids <- rownames(dt)
+      else           ids <- names(dt)
+  ids<-mget(ids,my.eval(paste(ep,"ENTREZID",sep='')))
+  ids<-subset(ids,!is.na(ids))  # remove the NAs
+  ids<-unique(ids)
+  ids
+}
+
+
+
+source("~/Desktop/research/notes/R_code/load-all.R")
+
+for (td in to.do) {
+   exp.name     <- td[[1]]
+   exp.platform <- td[[2]]
+   fit3 <- my.eval(paste(exp.name,".fit3",sep=''))
+   fit4 <- my.eval(paste(exp.name,".fit4",sep=''))
+
+   dt1<-my.decideTests(fit3,adjust.method="none",p.value=.01,lfc=1)
+   dt1.ids<-getIDS(dt1,exp.platform)
+   dt4<-new.decide.test(fit4)
+   dt4.ids<-unique(neweg2old(rownames(dt4)))
+cat(exp.name,"\n")
+   getVenn(dt1.ids,dt4.ids)
+}

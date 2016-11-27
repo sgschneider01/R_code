@@ -1,0 +1,37 @@
+8/2/2011:
+makeGroups - if annotation slot is empty - stop, require ann.table
+  change ann.table to ann.plat, or make either an option?
+  specify what an annotation table has to contain in help page?
+
+
+
+
+
+
+
+
+
+
+use this instead of toTable(package:annotationDBI)?  same result?  not quite:
+getAnnMap(package:annotate)
+map <- getAnnMap("ENTREZID", "hgu95av2", load=TRUE, type=c("env", "db"))
+ If type is "db", an S4 object representing the requested map. If type is "env", an R environment object representing the requested map.
+
+
+
+
+go back to using getGI and getSeq and matchPattern...?
+   nah - GI, still not using eutilsseq improper base url
+doing db=gene allows us to use gene id, skip getGI step to access nucleotide db (fasta), but, have to parse the XML after - toss up?
+
+
+url.beg <- "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gene&id="
+url.end <- "&retmode=xml"
+
+gi <- readLines(paste("http://www.ncbi.nlm.nih.gov/entrez/", 
+        "query.fcgi?db=Nucleotide&cmd=search&term=", accNum, 
+        sep = ""))
+seq <- readLines(paste("http://www.ncbi.nlm.nih.gov/entrez/eutils/", 
+        "efetch.fcgi?db=nucleotide&rettype=fasta&id=", gi, sep = ""))
+return(paste(seq[2:length(seq)], sep = "", collapse = ""))
+  # pastes all the fasta lines into one, minus the header line    

@@ -1,0 +1,31 @@
+> mpc <- as.list(illuminaHumanv2MAPCOUNTS)
+
+> t(as.data.frame(mpc))
+                               [,1]
+illuminaHumanv2ACCNUM         26756
+illuminaHumanv2ALIAS2PROBE    73900
+illuminaHumanv2CHR            24846
+illuminaHumanv2CHRLENGTHS        93
+illuminaHumanv2CHRLOC         23848
+illuminaHumanv2CHRLOCEND      23848
+illuminaHumanv2ENSEMBL        22714
+illuminaHumanv2ENSEMBL2PROBE  18486
+illuminaHumanv2ENTREZID       24846
+illuminaHumanv2ENZYME          2887
+illuminaHumanv2ENZYME2PROBE     964
+illuminaHumanv2GENENAME       24846
+illuminaHumanv2GO             21311
+illuminaHumanv2GO2ALLPROBES   14332
+illuminaHumanv2GO2PROBE       10891
+illuminaHumanv2MAP            24336
+illuminaHumanv2OMIM           16542
+illuminaHumanv2PATH            7487
+illuminaHumanv2PATH2PROBE       229
+illuminaHumanv2PFAM           23883
+illuminaHumanv2PMID           24079
+illuminaHumanv2PMID2PROBE    291960
+illuminaHumanv2PROSITE        23883
+illuminaHumanv2REFSEQ         24846
+illuminaHumanv2SYMBOL         24846
+illuminaHumanv2UNIGENE        24369
+illuminaHumanv2UNIPROT        22567

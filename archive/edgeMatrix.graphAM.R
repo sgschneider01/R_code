@@ -1,0 +1,3 @@
+setMethod("edgeMatrix", "graphAM",
+NULL
+)

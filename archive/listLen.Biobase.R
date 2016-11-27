@@ -1,0 +1,3 @@
+setMethod("listLen", "Biobase",
+NULL
+)

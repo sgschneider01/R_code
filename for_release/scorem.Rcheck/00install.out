@@ -1,0 +1,16 @@
+* installing *source* package ‘scorem’ ...
+** R
+** preparing package for lazy loading
+
+Welcome to Bioconductor
+
+  Vignettes contain introductory material. To view, type
+  'browseVignettes()'. To cite Bioconductor, see
+  'citation("Biobase")' and for packages 'citation("pkgname")'.
+
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (scorem)

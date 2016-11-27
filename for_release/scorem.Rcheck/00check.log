@@ -1,0 +1,77 @@
+* using log directory ‘/Users/arwen/Desktop/research/notes/R_code/for_release/scorem.Rcheck’
+* using R version 2.13.0 Patched (2011-05-16 r55928)
+* using platform: i386-apple-darwin9.8.0 (32-bit)
+* using session charset: UTF-8
+* checking for file ‘scorem/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘scorem’ version ‘1.0’
+* checking package name space information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking for executable files ... OK
+* checking whether package ‘scorem’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the name space can be loaded with stated dependencies ... OK
+* checking whether the name space can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... WARNING
+'library' or 'require' call not declared from: paste(exp.plat, "db", sep = ".")
+See the information on DESCRIPTION files in the chapter 'Creating R
+packages' of the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... NOTE
+prepare_Rd: consolidateGroups.Rd:22-24: Dropping empty section \details
+prepare_Rd: consolidateGroups.Rd:34-35: Dropping empty section \note
+prepare_Rd: consolidateGroups.Rd:29-30: Dropping empty section \references
+prepare_Rd: decideTests.Rd:34-36: Dropping empty section \details
+prepare_Rd: decideTests.Rd:46-48: Dropping empty section \note
+prepare_Rd: decideTests.Rd:40-42: Dropping empty section \references
+prepare_Rd: findDiscords.Rd:31-33: Dropping empty section \note
+prepare_Rd: findDiscords.Rd:25-27: Dropping empty section \references
+prepare_Rd: makeGroups.Rd:28-30: Dropping empty section \details
+prepare_Rd: makeGroups.Rd:40-42: Dropping empty section \note
+prepare_Rd: makeGroups.Rd:34-36: Dropping empty section \references
+prepare_Rd: scorem-package.Rd:34-35: Dropping empty section \examples
+* checking Rd metadata ... OK
+* checking Rd cross-references ... WARNING
+Unknown package(s) ‘decideTests’ in Rd xrefs
+Missing link(s) in documentation object '/Users/arwen/Desktop/research/notes/R_code/for_release/scorem/man/makeGroups.Rd':
+  ‘gcrma’
+
+Missing link(s) in documentation object '/Users/arwen/Desktop/research/notes/R_code/for_release/scorem/man/scorem-package.Rd':
+  ‘[affy]{affy}’
+
+See the information in section 'Cross-references' of the 'Writing R
+Extensions' manual.
+
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  do.eval filterGenes fisher.p getRcrit getSubGraphs makeAnnTable
+  sdOverS
+All user-level objects in a package should have documentation entries.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without hyperrefs or index ... ERROR
+Re-running with no redirection of stdout/stderr.

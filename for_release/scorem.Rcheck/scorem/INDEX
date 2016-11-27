@@ -1,0 +1,8 @@
+consolidateGroups       Consolidation of Concordant Probe Set Groups
+decideTests             Multiple Testing Across Genes and Contrasts
+findDiscords            Detection of Redundant Groups Differentially
+                        Expressed in Opposite Directions
+makeGroups              Make Groups of Concordant Probe Sets for
+                        Consolidation
+scorem-package          SCOREM: Statistical Consolidation of Redundant
+                        Expression Measures
